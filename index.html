@@ -109,11 +109,10 @@
       <audio autoplay controls>
         <source src="https://ramzzs.github.io/prueba/Senbonzakura.mp3" type="audio/mpeg">
       </audio>
-      <h1>Feliz no pumpe</h1>
     </div>
     <div class="miku-text">
       <div class="bocadillo-cuadrado">
-        <p id="miku-msg">Holiii, el mantenimiento finalizado... da click a la pantalla</p>
+        <p id="miku-msg">Holiii, el mantenimiento finalizado... da clic a la pantalla </p>
 
       </div>
     </div>
@@ -455,7 +454,7 @@
         r_text[2] = "Cuanto te debo?";
         r_text[3] = "Te suda la cola?";
         r_text[4] = "Te suda la cola?";
-        r_text[5] = "Ay ramses, nooo";
+        r_text[5] = "Ya me enoje"+String.fromCodePoint(0x1F63E);
         r_text[6] = "Si, soy";
         r_text[7] = "Si, soy";
         r_text[8] = "NyE, P.D.: Naco es corazón y La estupidez no tiene limites por tanto, eres un corazon sin limites";
@@ -466,6 +465,10 @@
 
 
         document.getElementById("miku-msg").innerText = mensaje;
+    }
+
+    function galeriaDania(){
+      document.getElementById("miku-msg").innerText = "Pronto vere tus dibujos";
     }
     </script>
   </body>
