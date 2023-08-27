@@ -83,9 +83,9 @@
         pointer-events: none;
       }
       footer {
+        position: fixed;
+        bottom: 0;
         width: 100%;
-        margin-top: 20px;
-        display: flex;
       }
       input {
         background-color: #fcbaad;
@@ -105,6 +105,9 @@
     </style>
   </head>
   <body>
+    <audio autoplay>
+      <source src="https://ramzzs.github.io/prueba/Senbonzakura.mp3" type="audio/mpeg">
+    </audio>
     <div class="blossom-banner">
       <h1>Feliz no pumpe</h1>
     </div>
@@ -365,9 +368,9 @@
         r_text[10] =
           "No se te ocurra rendirte… Aunque ya no haya vuelta atrás, no caigas en la desesperación y huyas… llega hasta el final, aunque sea arrastrándote ";
         r_text[11] =
-          "Los humanos no pueden vivir sin recuerdos... Pero tampoco pueden vivir sólo de recuerdos. Michiru. ";
+          "Los humanos no pueden vivir sin recuerdos... Pero tampoco pueden vivir sólo de recuerdos. ";
         r_text[12] =
-          "Si mañana acabara el mundo, yo sería feliz por haberte conocido. Sailor Moon.";
+          "Mientras sigamos vivos no seremos irrelevantes para este mundo.";
         r_text[13] =
           "Deberías disfrutar de los pequeños desvíos, disfrútalos mucho, porque de ese modo encontrarás aquello que es más importante que lo que querías.";
         r_text[14] =
@@ -443,6 +446,27 @@
         document.getElementById("miku-msg").innerText = mensaje;
 
       }
+
+      function frasesCelebres(){
+        
+        var r_text = new Array ();
+        r_text[0] = "Te suda la cola?";
+        r_text[1] = "No, como crees";
+        r_text[2] = "Cuanto te debo?";
+        r_text[3] = "Te suda la cola?";
+        r_text[4] = "Te suda la cola?";
+        r_text[5] = "Ay ramses, nooo";
+        r_text[6] = "Si, soy";
+        r_text[7] = "Si, soy";
+        r_text[8] = "NyE, P.D.: Naco es corazón y La estupidez no tiene limites por tanto, eres un corazon sin limites";
+        r_text[9] = "Ya me enoje";
+        r_text[10] = "Ay!!! esta bien bonito";
+        var i = Math.floor(11*Math.random())
+        var mensaje = r_text[i];
+
+
+        document.getElementById("miku-msg").innerText = mensaje;
+    }
     </script>
   </body>
 </html>
